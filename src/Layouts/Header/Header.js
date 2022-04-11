@@ -1,5 +1,5 @@
 
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
           <a href="/">
             <img
               className="img-responsive"
-              src="/assets/images/logo/logo.png"
+              src="/assets/images/logo/logo2.png"
               alt="#"
             />
           </a>
@@ -32,17 +32,17 @@ const Header = () => {
                     src="/assets/images/layout_img/user_img.jpg"
                     alt="#"
                   />
-                  <span className="name_user">John David</span>
+                  <span className="name_user">adminname</span>
                 </a>
                 <div className="dropdown-menu">
-                  <a className="dropdown-item" href="profile.html">
+                  <NavLink className="dropdown-item" to="/profile">
                     My Profile
-                  </a>
-                  <a className="dropdown-item" href="settings.html">
+                  </NavLink>
+                  <NavLink className="dropdown-item" to="/setting">
                     Settings
-                  </a>
+                  </NavLink>
                  
-                  <a className="dropdown-item" href="/">
+                  <a className="dropdown-item" href="/logout">
                     <span>Log Out</span> <i className="fa fa-sign-out" />
                   </a>
                 </div>

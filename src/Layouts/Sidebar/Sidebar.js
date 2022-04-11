@@ -11,7 +11,7 @@ const Sidebar = () => {
               <a href="index.html">
                 <img
                   className="logo_icon img-responsive"
-                  src="/assets/images/logo/logo_icon.png"
+                  src="/assets/images/logo/logo2.png"
                   alt="#"
                 />
               </a>
@@ -28,7 +28,7 @@ const Sidebar = () => {
                 />
               </div>
               <div className="user_info">
-                <h6>John David</h6>
+                <h6>adminname</h6>
                 <p>
                   <span className="online_animation" /> Online
                 </p>
@@ -61,14 +61,14 @@ const Sidebar = () => {
               </a>
               <ul className="collapse list-unstyled" id="element">
                 <li>
-                  <a href="#">
+                  <Link to="/patients">
                     &gt; <span>Add New Patient</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/patientlist">
                     &gt; <span>Patient List</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -90,7 +90,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                   <a href="#">
-                    &gt; <span>Patient Test</span>
+                    &gt; <span>Test List</span>
                   </a>
                 </li>
               </ul>
@@ -130,22 +130,16 @@ const Sidebar = () => {
             </li>
 
             <li>
-              <Link to="/login">
-                <i className="fa fa-sign-in yellow_color" /> <span>Login</span>
-              </Link>
-            </li>
-
-            <li>
               <Link to="/setting">
                 <i className="fa fa-cog yellow_color" /> <span>Settings</span>
               </Link>
             </li>
 
             <li>
-              <a href="#">
+              <Link to="/logout">
                 <i className="fa fa-sign-out yellow_color" />{' '}
                 <span>Logout</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
